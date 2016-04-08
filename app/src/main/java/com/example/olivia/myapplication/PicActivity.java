@@ -1,73 +1,64 @@
 package com.example.olivia.myapplication;
 
-import org.opencv.android.BaseLoaderCallback;
-import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
-import org.opencv.android.Utils;
-import org.opencv.core.Core;
-import org.opencv.core.CvType;
-import org.opencv.core.Mat;
-import org.opencv.core.Point;
-import org.opencv.core.Scalar;
-import org.opencv.imgproc.Imgproc;
-
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
-import android.app.Activity;
-import android.graphics.Bitmap;
 
 /**
  * Created by olivia on 06/04/2016.
  */
-public class PicActivity extends Activity {
-    static {
-        // If you use opencv 2.4, System.loadLibrary("opencv_java")
-        System.loadLibrary("opencv_java3");
-    }
+public class PicActivity extends AppCompatActivity {
+//    static {
+//        // If you use opencv 2.4, System.loadLibrary("opencv_java")
+//        System.loadLibrary("opencv_java3");
+//    }
+//
+//    static {
+//        if (!OpenCVLoader.initDebug()) {
+//            // Handle initialization error
+//        }
+//    }
 
-    static {
-        if (!OpenCVLoader.initDebug()) {
-            // Handle initialization error
-        }
-    }
+    private static final int PICK_IMAGE = 100;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pic);
+
+        imageView = (ImageView) findViewById(R.id.image_view);
+
+        Button pickImageButton = (Button) findViewById(R.id.pick_image_button);
+        pickImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openGallery();
+            }
+        });
     }
 
-    private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
-        @Override
-        public void onManagerConnected(int status) {
-            if (status == LoaderCallbackInterface.SUCCESS ) {
-                // now we can call opencv code !
-                helloworld();
-            } else {
-                super.onManagerConnected(status);
-            }
-        }
-    };
+    private void openGallery() {
+        Intent gallery = new Intent(Intent.ACTION_PICK,
+                MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+        startActivityForResult(gallery, PICK_IMAGE);
+    }
+
 
     @Override
-    public void onResume() {;
-        super.onResume();
-        OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_5,this, mLoaderCallback);
-        // you may be tempted, to do something here, but it's *async*, and may take some time,
-        // so any opencv call here will lead to unresolved native errors.
-    };
-
-    public void helloworld() {
-        // make a mat and draw something
-        Mat m = Mat.zeros(100,400, CvType.CV_8UC3);
-        Imgproc.putText(m, "Elmer is great", new Point(30, 80), Core.FONT_HERSHEY_SCRIPT_SIMPLEX, 2.2, new Scalar(200, 200, 0), 2);
-        // convert to bitmap:
-        Bitmap bm = Bitmap.createBitmap(m.cols(), m.rows(),Bitmap.Config.ARGB_8888);
-        Utils.matToBitmap(m, bm);
-
-        // find the imageview and draw it!
-        ImageView iv = (ImageView) findViewById(R.id.imageView1);
-        iv.setImageBitmap(bm);
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK && requestCode == PICK_IMAGE) {
+            Uri imageUri = data.getData();
+            imageView.setImageURI(imageUri);
+        }
     }
+
 }
 

@@ -1,2 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.2.1_4a2417da33a4987a84b2164a810dfacc65b078c2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.2.1_7efabfba41bb7f624284efffae76f786cb954327/classes.dex" />
+    </item>
+    <item
+        jar="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="d21dae1a55dd2a30005ef3f68d0464c6152206e2">
+        <dex dex="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cddc32ca9df170bcddbf6e7a29917aeb6d8c8129/classes.dex" />
+    </item>
+    <item
+        jar="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.2.1_e7ecd2aa1b9921a32c0eaa72bfe7761403832b45/classes.dex" />
+    </item>
+    <item
+        jar="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.2.1_15d47862d5802d426de408fcbed5b2d9cbf462f6/classes.dex" />
+    </item>
+    <item
+        jar="/Users/olivia/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.2.1_141c0b8423ab796f462e75eef390b5f4ec5d68d8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.2.1_68b1ba0aa23bd17c2dcb2504e24c39aa913f3125/classes.dex" />
+    </item>
+    <item
+        jar="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.2.1_4cea9ce83c7be07933d7967d00d6332fc7e1b5fa/classes.dex" />
+    </item>
+    <item
+        jar="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.2.1_df22a19a87d5810dec87c59b407b6162a1dffc55/classes.dex" />
+    </item>
+    <item
+        jar="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="290f0a4675451fa3173ff278378851409650922c">
+        <dex dex="/Users/olivia/AndroidStudioProjects/OpenCVPlayground/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3c3e45e372856a984e09d4d0f94fa2fe5b819099/classes.dex" />
+    </item>
+
+</items>
